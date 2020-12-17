@@ -22,9 +22,9 @@ export enum Season {
   }
 
 export enum Background {
-    Home = 'url(../../background2.png)',
-    Ingredients = 'url(../../background3.png)',
-    Challenge = 'url(../../background4.png)'
+    Home = 'url(background2.png)',
+    Ingredients = 'url(background3.png)',
+    Challenge = 'url(background4.png)'
 }
 
 

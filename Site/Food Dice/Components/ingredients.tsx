@@ -18,22 +18,22 @@ export default function Ingredients (props: IngredientsProps){
             </div>
             <div style={ingredientAreaStyle}>
                 <div style={ingredientsStyle}>
-                    Protein: {props.options.Protein}
+                    Protein:<br/> {props.options.Protein}
                 </div >
                 <div style={ingredientsStyle}>
-                    Vegetable: {props.options.Vegetable}
+                    Vegetable:<br/> {props.options.Vegetable}
                 </div>
                 <div style={ingredientsStyle}>
-                Method: {props.options.Method}
+                Method:<br/> {props.options.Method}
                 </div>
                 <div style={ingredientsStyle}>
-                    Carb: {props.options.Carb}
+                    Carb:<br/> {props.options.Carb}
                 </div>
                 <div style={ingredientsStyle}>
-                    Herbs: {props.options.Herbs}
+                    Herbs:<br/> {props.options.Herbs}
                 </div>
                 <div style={ingredientsStyle}>
-                    Bonus: {props.options.Bonus}
+                    Bonus:<br/> {props.options.Bonus}
                 </div>
             </div>
             <div style={buttonDivStyle}>

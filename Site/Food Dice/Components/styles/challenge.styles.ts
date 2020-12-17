@@ -2,9 +2,9 @@ import CSS from 'csstype';
 
 export const challengeTitleStyle: CSS.Properties = {
     marginBottom: '2.5vh',
-    marginRight: '30vw',
-    marginLeft: '30vw',
-    maxWidth: '40vw',
+    marginRight: '32vw',
+    marginLeft: '32vw',
+    maxWidth: '35vw',
     minWidth: '500px',
     color: 'black',
     fontSize: '55px',
@@ -20,54 +20,24 @@ export const challengeStyle: CSS.Properties = {
     backgroundRepeat: 'no-repeat',
     backgroundAttachment: 'fixed',
     backgroundSize: 'cover',
-    paddingTop: '30vh'
-}
-
-export const ingredientsStyle: CSS.Properties = {
-    backgroundColor: 'pink',
-    float: 'left',
-    marginRight: '15%',
-    width: '200px',
-    height: '125px',
-    color: 'black',
-    padding: '0.25em 0.5em',
-    fontSize: '20px',
-    fontWeight: 'bolder',
-    lineHeight: '50px',
-    borderRadius: '50%',
-    border: '2px solid black',
-    textAlign: 'center',
-    boxSizing: "border-box",
-    MozBoxSizing: "border-box",
-    WebkitBoxSizing: "border-box",
-    marginBottom: '1.5vh',
-    marginTop: '1.5vh'
-}
-
-export const ingredientAreaStyle: CSS.Properties = {
-    marginTop: '2.5vh',
-    marginRight: '22vw',
-    marginLeft: '22vw',
-    paddingLeft: '5vw',
-    maxWidth: '56vw',
-    minWidth: '100px',
-    color: 'blue',
-    height: '25vh',
-    WebkitColumnCount: 3,
-    WebkitColumnGap: '0.25vw',
-    MozColumnCount: 3,
-    MozColumnGap: '0.25vw',
-    columnCount: 3,
-    columnGap: '0.25vw',
-    backgroundColor: 'hsla(0, 0%, 100%, 0.7)',
+    paddingTop: '40vh'
 }
 
 export const buttonDivStyle: CSS.Properties = {
-    height: '100px',
-    marginTop: '2vh',
+    height: '70px',
+    marginTop: '2.5vh',
     marginRight: '37.5vw',
     marginLeft: '37.5vw',
     maxWidth: '25vw',
+    minWidth: '100px',
+}
+
+export const resetButtonDivStyle: CSS.Properties = {
+    height: '50px',
+    marginTop: '0vh',
+    marginRight: '44.25vw',
+    marginLeft: '44.25vw',
+    maxWidth: '11.5vw',
     minWidth: '100px',
 }
 
@@ -96,4 +66,30 @@ export const nextButtonStyle: CSS.Properties = {
     lineHeight: '35px',
     fontWeight: 'bolder',
     background: 'hsl(120,100%,25%,0.9)',
+}
+
+export const stopButtonStyle: CSS.Properties = {
+    float: 'left',
+    width: '11.5vw',
+    background: 'hsl(0,100%,50%,0.9)',
+    borderRadius: '30px',
+    border: '2px solid black',
+    color: 'white',
+    padding: '0.25em 1em',
+    fontSize: '30px',
+    fontWeight: 'bolder',
+    lineHeight: '35px',
+}
+
+export const resetButtonStyle: CSS.Properties = {
+    float: 'left',
+    width: '11.5vw',
+    background: 'hsl(240,100%,50%,0.9)',
+    borderRadius: '30px',
+    border: '2px solid black',
+    color: 'white',
+    padding: '0.25em 1em',
+    fontSize: '30px',
+    fontWeight: 'bolder',
+    lineHeight: '35px',
 }

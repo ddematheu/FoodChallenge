@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { Background, Pages } from "./start";
-import { buttonDivStyle, backButtonStyle, challengeStyle, challengeTitleStyle, ingredientAreaStyle, ingredientsStyle, nextButtonStyle } from "./styles/Ingredients.styles";
+import { buttonDivStyle, backButtonStyle, challengeStyle, challengeTitleStyle, nextButtonStyle, stopButtonStyle, resetButtonStyle, resetButtonDivStyle } from "./styles/challenge.styles";
 
 
 export interface ChallengeProps{
@@ -44,7 +44,7 @@ export default function Challenge (props: ChallengeProps){
     return(
         <div style={challengeStyle}>
             <div style={challengeTitleStyle}>
-                Time Left: {time.h}:{time.m}:{time.s}
+                Time Left: {time.h == 0 ? '00' : time.h}:{time.m == 0 ? '00' : time.m}:{time.s == 0 ? '00' : time.s}
             </div>
             <div style={buttonDivStyle}>
                 <button style={backButtonStyle} onClick={(e) => 
@@ -55,11 +55,26 @@ export default function Challenge (props: ChallengeProps){
                 }>
                     Back
                 </button>
+                {startCounter == false ? 
                 <button style={nextButtonStyle} onClick={(e) => {
                     setStartCounter(true);
                 }}>
                     Start
-                </button>
+                </button> 
+                : 
+                <button style={stopButtonStyle} onClick={(e) => {
+                    setStartCounter(false);
+                }}>
+                    Stop
+                </button>}
+            </div>
+            <div style={resetButtonDivStyle}>
+                { timeLeft < 3600 ? <button style={resetButtonStyle} onClick={(e) => {
+                        setStartCounter(false);
+                        setTimeLeft(3600);
+                    }}>
+                        Reset
+                </button> : 1}
             </div>
         </div>
     );

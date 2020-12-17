@@ -3,7 +3,6 @@ import CSS from 'csstype';
 export const startStyle: CSS.Properties = {
     width: '100vw',
     height: '100vh',
-    backgroundImage: "url(" + "image1.jpg" + ")",
     backgroundRepeat: 'no-repeat',
     backgroundAttachment: 'fixed',
     backgroundSize: 'cover',
@@ -20,22 +19,25 @@ export const buttonDivStyle: CSS.Properties = {
 
 export const buttonStyle: CSS.Properties = {
     width: '100%',
-    borderRadius: '3px',
-    border: '2px solid blue',
-    color: 'blue',
+    borderRadius: '30px',
+    border: '2px solid black',
+    color: 'white',
     padding: '0.25em 1em',
     fontSize: '30px',
     lineHeight: '35px',
+    backgroundColor: 'hsl(120,100%,25%,0.9)',
 }
 
 export const titleStyle: CSS.Properties = {
     marginBottom: '2.5vh',
-    marginRight: '10vw',
-    marginLeft: '10vw',
-    maxWidth: '80vw',
+    marginRight: '20vw',
+    marginLeft: '20vw',
+    maxWidth: '60vw',
     minWidth: '500px',
     color: 'black',
-    fontSize: '60px',
+    fontSize: '55px',
     lineHeight: '65px',
-    textAlign: "center"
+    textAlign: "center",
+    fontWeight: 'bolder',
+    backgroundColor: 'hsla(0, 0%, 100%, 0.7)',
 }
